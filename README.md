@@ -12,7 +12,7 @@
 
 ![Screenshot_894](https://github.com/JestkieDev/MessengerApp/assets/160913011/697dc9e8-0ac7-4405-8cb9-56ac88e97677)
 
-![Screenshot_895](https://github.com/JestkieDev/MessengerApp/assets/160913011/5f576758-7b3b-4fe0-8ae8-926231c64826)
+![Screenshot_898](https://github.com/JestkieDev/MessengerApp/assets/160913011/bcd8a34a-a319-45f0-8f76-6535a47d18a4)
 
 ![Screenshot_896](https://github.com/JestkieDev/MessengerApp/assets/160913011/bc0dcc54-1004-49d1-92b2-26c90eab376b)
 
