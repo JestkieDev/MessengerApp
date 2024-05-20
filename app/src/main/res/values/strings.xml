@@ -1,0 +1,123 @@
+<resources>
+    <string name="app_name">Мессенджер</string>
+    <string name="nombre_desarrollador">Дипломная работа</string>
+
+    <string name="ID_prueba">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="ID_produccion">ca-app-pub-9107548705024373~2727567001</string>
+
+    <string name="ID_prueba_banner">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="ID_produccion_banner">ca-app-pub-9107548705024373/1617912739</string>
+
+    <string name="ID_produccion_intersticial">ca-app-pub-9107548705024373/8846554114</string>
+
+    <string name="Btn_ir_logeo">Войти с помощью email</string>
+    <string name="Btn_login_google">Ingresar con Google</string>
+
+    <string name="R_Et_nombre_usuario">Имя пользователя</string>
+    <string name="R_Et_email">Электронная почта</string>
+    <string name="R_Et_password">Пароль</string>
+    <string name="R_Et_r_password">Повторите пароль</string>
+    <string name="Btn_registrar">Зарегистрироваться</string>
+
+    <string name="menu_principal">Главное меню</string>
+    <string name="menu_perfil">Профиль</string>
+    <string name="menu_acerca_de">О приложении</string>
+    <string name="menu_salir">Выйти</string>
+
+    <string name="menu_visitar_perfil">Посетить профиль</string>
+    <string name="menu_visitar">Посетить профиль</string>
+
+
+    <string name="L_Et_email">Электронная почта</string>
+    <string name="L_Et_password">Пароль</string>
+    <string name="Txt_olvide_password">Забыл(а) пароль</string>
+    <string name="Btn_login">Войти</string>
+    <string name="TXT_no_cuenta">Нет аккаунта?</string>
+    <string name="TXT_ir_registro">Зарегистрироваться</string>
+
+    <string name="Txt_instrucciones">Введите адрес электронной почты, чтобы получить инструкции по восстановлению пароля</string>
+    <string name="Btn_enviar_correo">Отправить</string>
+
+    <string name="Nombre_usuario">Имя пользователя</string>
+
+    <string name="Item_nombre_usuario">Имя пользователя</string>
+    <string name="Item_email_usuario">Email пользователя</string>
+    <string name="Txt_ultimo_mensaje"></string>
+
+    <string name="Et_buscar_usuario">Поиск</string>
+
+    <!--Perfil de usuario-->
+    <string name="P_n_usuario">Имя пользователя</string>
+    <string name="P_proveedor_txt">Способ входа: </string>
+    <string name="P_proveedor"> -- </string>
+    <string name="P_email">Email</string>
+    <string name="P_nombres">Имя</string>
+    <string name="P_apellidos">Фамилия</string>
+    <string name="P_profesion">Род занятий</string>
+    <string name="P_domicilio">Адрес</string>
+    <string name="P_edad">Возраст</string>
+    <string name="P_telefono">Номер телефона</string>
+    <string name="Btn_Guardar">Сохранить</string>
+
+    <string name="Btn_verificar">Не верефицирован(а)</string>
+
+    <!--Cd - Establecer teléfono-->
+    <string name="Establecer_Telefono">Введите свой номер</string>
+    <string name="Btn_aceptar_Telefono">Применить</string>
+
+    <!--Cd - Cuenta verificada-->
+    <string name="CuentaVerificadaTXT">Верифицирован(а)</string>
+    <string name="BtnEntendidoVerificado">Ясно</string>
+
+    <!--CD - visualizar imagen-->
+    <string name="Btn_cerrar_v">Закрыть</string>
+
+    <!--Editar imagen perfil-->
+    <string name="BtnElegirImagenDe">Выбрать изображение</string>
+    <string name="BtnActualizarImagen">Применить изображение</string>
+
+    <!--Cuadro de diálogo seleccionar imagen de-->
+    <string name="Txt_seleccionar_imagen">Выбрать/Сделать изображение из: </string>
+    <string name="Btn_abrir_galeria">Галереи</string>
+    <string name="Btn_abrir_camara">Камеры</string>
+
+    <!--Chat-->
+    <string name="N_usuario_chat">Имя пользователя</string>
+    <string name="Et_mensaje">Введите сообщение</string>
+
+    <string name="PV_Perfil_TXT">Профиль пользователя</string>
+    <string name="PV_NombreU">Имя пользователя</string>
+    <string name="PV_EmailU">Email пользователя</string>
+    <string name="PV_Uid_TXT">Идентификатор: </string>
+    <string name="PV_Uid">Uid</string>
+
+    <string name="PV_nombres_TXT">Имя: </string>
+    <string name="PV_nombres"> -- </string>
+    <string name="PV_apellidos_TXT">Фамилия: </string>
+    <string name="PV_apellidos"> -- </string>
+    <string name="PV_profesion_TXT">Род занятий: </string>
+    <string name="PV_profesion"> -- </string>
+    <string name="PV_telefono_TXT">Номер телефона: </string>
+    <string name="PV_telefono"> -- </string>
+    <string name="PV_edad_TXT">Возраст: </string>
+    <string name="PV_edad"> -- </string>
+    <string name="PV_domicilio_TXT">Адрес: </string>
+    <string name="PV_domicilio"> -- </string>
+    <string name="PV_proveedor_TXT">Способ входа: </string>
+    <string name="PV_proveedor"> -- </string>
+
+    <string name="Btn_llamar">Позвонить</string>
+    <string name="Btn_enviar_sms">Отправить SMS</string>
+
+    <!--Item chat-->
+    <string name="TXT_ver_mensaje">Привет,как дела?</string>
+
+    <!--Info app-->
+    <string name="Desarrollador">Сделано для курса Kotlin/AndroidStudio от Urban University</string>
+    <string name="CorreoSoporte">Связь: *пока что нет*</string>
+    <string name="Version">Версия: 1.0</string>
+    <string name="EntendidoInfo">Ок</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+</resources>
