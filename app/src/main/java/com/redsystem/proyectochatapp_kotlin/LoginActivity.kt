@@ -28,7 +28,7 @@ class LoginActivity : AppCompatActivity() {
         InicializarVariables()
 
         Txt_olvide_password.setOnClickListener {
-            startActivity(Intent(this@LoginActivity, Olvide_password::class.java))
+            startActivity(Intent(this@LoginActivity, ForgotPasswordActivity::class.java))
         }
 
         Btn_login.setOnClickListener {
@@ -36,7 +36,7 @@ class LoginActivity : AppCompatActivity() {
         }
 
         TXT_ir_registro.setOnClickListener {
-            val intent = Intent(this@LoginActivity, RegistroActivity::class.java)
+            val intent = Intent(this@LoginActivity, RegisterActivity::class.java)
             startActivity(intent)
         }
     }

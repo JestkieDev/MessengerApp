@@ -18,7 +18,7 @@
         android:theme="@style/Theme.ProyectoChatAppKotlin"
         tools:targetApi="31">
         <activity
-            android:name=".Olvide_password"
+            android:name=".ForgotPasswordActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -30,28 +30,28 @@
             android:value="@string/ID_prueba" />
 
         <activity
-            android:name=".Perfil.PerfilVisitado"
+            android:name=".Profile.VisitProfileActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".Chat.MensajesActivity"
+            android:name=".Chat.MessagesActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".Perfil.EditarImagenPerfil"
+            android:name=".Profile.EditImageProfile"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".Perfil.PerfilActivity"
+            android:name=".Profile.ProfileActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -65,14 +65,14 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".RegistroActivity"
+            android:name=".RegisterActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".Inicio"
+            android:name=".StartActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -100,7 +100,7 @@
         </activity>
 
         <service
-            android:name=".Notificaciones.MyFirebaseMessagingService"
+            android:name=".Notifications.MyFirebaseMessagingService"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
@@ -108,7 +108,7 @@
             </intent-filter>
         </service>
         <service
-            android:name=".Notificaciones.MyFirebaseInstanceIdService"
+            android:name=".Notifications.MyFirebaseInstanceIdService"
             android:enabled="true"
             android:exported="true">
             <intent-filter>

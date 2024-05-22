@@ -2,14 +2,12 @@ package com.redsystem.proyectochatapp_kotlin
 
 import android.app.Dialog
 import android.content.Intent
-import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
 import android.widget.Button
-import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
@@ -21,11 +19,11 @@ import com.google.android.material.tabs.TabLayout
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.database.*
-import com.redsystem.proyectochatapp_kotlin.Fragmentos.FragmentoChats
-import com.redsystem.proyectochatapp_kotlin.Fragmentos.FragmentoUsuarios
-import com.redsystem.proyectochatapp_kotlin.Modelo.Chat
-import com.redsystem.proyectochatapp_kotlin.Modelo.Usuario
-import com.redsystem.proyectochatapp_kotlin.Perfil.PerfilActivity
+import com.redsystem.proyectochatapp_kotlin.Fragments.ChatFragment
+import com.redsystem.proyectochatapp_kotlin.Fragments.UserFragment
+import com.redsystem.proyectochatapp_kotlin.Model.Chat
+import com.redsystem.proyectochatapp_kotlin.Model.User
+import com.redsystem.proyectochatapp_kotlin.Profile.ProfileActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -57,8 +55,8 @@ class MainActivity : AppCompatActivity() {
 
         /*val viewpagerAdapter = ViewPagerAdapter(supportFragmentManager)
 
-        viewpagerAdapter.addItem(FragmentoUsuarios(),"Usuarios")
-        viewpagerAdapter.addItem(FragmentoChats(), "Chats")
+        viewpagerAdapter.addItem(UserFragment(),"Usuarios")
+        viewpagerAdapter.addItem(ChatFragment(), "Chats")
 
         viewPager.adapter = viewpagerAdapter
         tabLayout.setupWithViewPager(viewPager)*/
@@ -75,12 +73,12 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
                 if (contMensajesNoLeidos == 0){
-                    viewPagerAdapter.addItem(FragmentoChats(), "Чаты")
+                    viewPagerAdapter.addItem(ChatFragment(), "Чаты")
                 }
                 else{
-                    viewPagerAdapter.addItem(FragmentoChats(), "[$contMensajesNoLeidos] Чаты")
+                    viewPagerAdapter.addItem(ChatFragment(), "[$contMensajesNoLeidos] Чаты")
                 }
-                viewPagerAdapter.addItem(FragmentoUsuarios(), "Пользователи")
+                viewPagerAdapter.addItem(UserFragment(), "Пользователи")
                 viewPager.adapter = viewPagerAdapter
                 tabLayout.setupWithViewPager(viewPager)
             }
@@ -95,8 +93,8 @@ class MainActivity : AppCompatActivity() {
         reference!!.addValueEventListener(object : ValueEventListener{
             override fun onDataChange(snapshot: DataSnapshot) {
                 if (snapshot.exists()){
-                    val usuario : Usuario? = snapshot.getValue(Usuario::class.java)
-                    nombre_usuario.text = usuario!!.getN_Usuario()
+                    val user : User? = snapshot.getValue(User::class.java)
+                    nombre_usuario.text = user!!.getN_Usuario()
                 }
             }
 
@@ -136,14 +134,14 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         val inflater : MenuInflater = menuInflater
-        inflater.inflate(R.menu.menu_principal, menu)
+        inflater.inflate(R.menu.menu_main, menu)
         return true
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId){
             R.id.menu_perfil->{
-                val intent = Intent(applicationContext, PerfilActivity::class.java)
+                val intent = Intent(applicationContext, ProfileActivity::class.java)
                 startActivity(intent)
                 return true
             }
@@ -153,7 +151,7 @@ class MainActivity : AppCompatActivity() {
             }
             R.id.menu_salir->{
                 FirebaseAuth.getInstance().signOut()
-                val intent = Intent(this@MainActivity, Inicio::class.java)
+                val intent = Intent(this@MainActivity, StartActivity::class.java)
                 Toast.makeText(applicationContext, "Вы вышли из системы", Toast.LENGTH_SHORT).show()
                 startActivity(intent)
                 //finish()
@@ -168,7 +166,7 @@ class MainActivity : AppCompatActivity() {
 
 
         val dialog = Dialog(this@MainActivity)
-        dialog.setContentView(R.layout.cuadro_d_info_app)
+        dialog.setContentView(R.layout.window_app_info)
 
         EntendidoInfo = dialog.findViewById(R.id.EntendidoInfo)
 
